@@ -1,8 +1,7 @@
 import 'dart:async';
-
-import 'package:customsplashscreen/custom_splashscreen.dart';
 import '../home.dart';
 import 'package:flutter/material.dart';
+import 'package:easy_splash_screen/easy_splash_screen.dart';
 
 class SplashFuturePage extends StatefulWidget {
   SplashFuturePage({Key? key}) : super(key: key);
@@ -19,7 +18,7 @@ class _SplashFuturePageState extends State<SplashFuturePage> {
 
   @override
   Widget build(BuildContext context) {
-    return CustomSplashScreen(
+    return EasySplashScreen(
       logo: Image.network(
           'https://cdn4.iconfinder.com/data/icons/logos-brands-5/24/flutter-512.png'),
       title: Text(

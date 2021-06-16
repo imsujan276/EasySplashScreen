@@ -1,7 +1,7 @@
-name: customsplashscreen
-description: Custom Splash Screen for your flutter app
+name: easy_splash_screen
+description: Custom Easy Splash Screen for your flutter app
 version: 1.0.0
-homepage: https://github.com/imsujan276/CustomSplashScreen
+homepage: https://github.com/imsujan276/EasySplashScreen
 
 environment:
   sdk: ">=2.12.0 <3.0.0"

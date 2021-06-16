@@ -1,4 +1,4 @@
-import 'package:customsplashscreen/custom_splashscreen.dart';
+import 'package:easy_splash_screen/easy_splash_screen.dart';
 import '../home.dart';
 import 'package:flutter/material.dart';
 
@@ -12,7 +12,7 @@ class SplashPage extends StatefulWidget {
 class _SplashPageState extends State<SplashPage> {
   @override
   Widget build(BuildContext context) {
-    return CustomSplashScreen(
+    return EasySplashScreen(
       logo: Image.network(
           'https://cdn4.iconfinder.com/data/icons/logos-brands-5/24/flutter-512.png'),
       title: Text(
@@ -22,7 +22,7 @@ class _SplashPageState extends State<SplashPage> {
           fontWeight: FontWeight.bold,
         ),
       ),
-      backgroundColor: Colors.grey.shade400,
+      // backgroundColor: Colors.grey.shade400,
       showLoader: true,
       loadingText: Text("Loading..."),
       navigator: HomePage(),

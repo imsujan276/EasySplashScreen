@@ -1,6 +1,6 @@
 # [Custom Splash Screen](https://pub.dev/packages/splashscreen)
 
-* A customsplashscreen is a flutter package for easily implement the splash screen in the app
+* A easy_splash_screen is a flutter package for easily implement the splash screen in the app
 
 
 ## Screenshots
@@ -17,7 +17,7 @@ To use this package :
   dependencies:
     flutter:
       sdk: flutter
-    customsplashscreen:
+    easy_splash_screen:
 ```
 
 ### How to use
@@ -25,7 +25,7 @@ To use this package :
 As time based...
 
 ``` dart
-import 'package:customsplashscreen/custom_splashscreen.dart';
+import 'package:easy_splash_screen/custom_splashscreen.dart';
 import '../home.dart';
 import 'package:flutter/material.dart';
 
@@ -39,7 +39,7 @@ class SplashPage extends StatefulWidget {
 class _SplashPageState extends State<SplashPage> {
   @override
   Widget build(BuildContext context) {
-    return CustomSplashScreen(
+    return easy_splash_screen(
       logo: Image.network(
           'https://cdn4.iconfinder.com/data/icons/logos-brands-5/24/flutter-512.png'),
       title: Text(
@@ -65,7 +65,7 @@ As future based...
 ``` dart
 import 'dart:async';
 
-import 'package:customsplashscreen/custom_splashscreen.dart';
+import 'package:easy_splash_screen/custom_splashscreen.dart';
 import '../home.dart';
 import 'package:flutter/material.dart';
 
@@ -84,7 +84,7 @@ class _SplashFuturePageState extends State<SplashFuturePage> {
 
   @override
   Widget build(BuildContext context) {
-    return CustomSplashScreen(
+    return easy_splash_screen(
       logo: Image.network(
           'https://cdn4.iconfinder.com/data/icons/logos-brands-5/24/flutter-512.png'),
       title: Text(

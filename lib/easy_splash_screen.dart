@@ -1,11 +1,11 @@
-library customsplashscreen;
+library easy_splash_screen;
 
 import 'dart:async';
 import 'dart:core';
 
 import 'package:flutter/material.dart';
 
-class CustomSplashScreen extends StatefulWidget {
+class EasySplashScreen extends StatefulWidget {
   /// App title, shown in the middle of screen in case of no image available
   final Text title;
 
@@ -48,7 +48,7 @@ class CustomSplashScreen extends StatefulWidget {
   /// If both futureNavigator and navigator are provided, futureNavigator will take priority
   final Future<Object>? futureNavigator;
 
-  CustomSplashScreen({
+  EasySplashScreen({
     this.loaderColor = Colors.black,
     this.futureNavigator,
     this.navigator,
@@ -65,10 +65,10 @@ class CustomSplashScreen extends StatefulWidget {
   });
 
   @override
-  _CustomSplashScreenState createState() => _CustomSplashScreenState();
+  _EasySplashScreenState createState() => _EasySplashScreenState();
 }
 
-class _CustomSplashScreenState extends State<CustomSplashScreen> {
+class _EasySplashScreenState extends State<EasySplashScreen> {
   @override
   void initState() {
     super.initState();
