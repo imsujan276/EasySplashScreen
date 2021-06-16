@@ -5,7 +5,7 @@
 
 ## Screenshots
 
-![screenshot description (alt)](screenshot.png)
+![Screenshot](https://github.com/imsujan276/EasySplashScreen/blob/main/screenshot.png)
 
 ## Usage
 
