@@ -1,6 +1,6 @@
-# [Custom Splash Screen](https://pub.dev/packages/splashscreen)
+# [Easy Splash Screen](https://pub.dev/packages/easy_splash_screen)
 
-* A easy_splash_screen is a flutter package for easily implement the splash screen in the app
+* easy_splash_screen is a flutter package for easily implement the splash screen in the app
 
 
 ## Screenshots
