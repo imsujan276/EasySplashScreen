@@ -1,6 +1,6 @@
 name: easy_splash_screen
-description: Easy Splash Screen plugin for your flutter app
-version: 1.0.2
+description: Easy Splash Screen plugin for your flutter app. You can easily implement this plugin to show splash screen and save time.
+version: 1.0.3
 homepage: https://github.com/imsujan276/EasySplashScreen
 
 environment:

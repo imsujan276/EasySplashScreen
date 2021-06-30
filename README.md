@@ -25,7 +25,7 @@ To use this package :
 As time based...
 
 ``` dart
-import 'package:easy_splash_screen/custom_splashscreen.dart';
+import 'package:easy_splash_screen/easy_splash_screen.dart';
 import '../home.dart';
 import 'package:flutter/material.dart';
 
@@ -39,7 +39,7 @@ class SplashPage extends StatefulWidget {
 class _SplashPageState extends State<SplashPage> {
   @override
   Widget build(BuildContext context) {
-    return easy_splash_screen(
+    return EasySplashScreen(
       logo: Image.network(
           'https://cdn4.iconfinder.com/data/icons/logos-brands-5/24/flutter-512.png'),
       title: Text(
@@ -65,7 +65,7 @@ As future based...
 ``` dart
 import 'dart:async';
 
-import 'package:easy_splash_screen/custom_splashscreen.dart';
+import 'package:easy_splash_screen/easy_splash_screen.dart';
 import '../home.dart';
 import 'package:flutter/material.dart';
 
@@ -84,7 +84,7 @@ class _SplashFuturePageState extends State<SplashFuturePage> {
 
   @override
   Widget build(BuildContext context) {
-    return easy_splash_screen(
+    return EasySplashScreen(
       logo: Image.network(
           'https://cdn4.iconfinder.com/data/icons/logos-brands-5/24/flutter-512.png'),
       title: Text(

@@ -7,7 +7,7 @@ import 'package:flutter/material.dart';
 
 class EasySplashScreen extends StatefulWidget {
   /// App title, shown in the middle of screen in case of no image available
-  final Text title;
+  final Text? title;
 
   /// Page background color
   final Color backgroundColor;
@@ -55,7 +55,7 @@ class EasySplashScreen extends StatefulWidget {
     this.durationInSeconds = 3,
     required this.logo,
     this.logoSize = 50,
-    required this.title,
+    this.title,
     this.backgroundColor = Colors.white,
     this.loadingText = const Text(''),
     this.loadingTextPadding = const EdgeInsets.only(top: 10.0),
@@ -133,7 +133,7 @@ class _EasySplashScreenState extends State<EasySplashScreen> {
                         Padding(
                           padding: const EdgeInsets.only(top: 25.0),
                         ),
-                        widget.title
+                        if (widget.title != null) widget.title!
                       ],
                     ),
                   ),
@@ -153,9 +153,10 @@ class _EasySplashScreenState extends State<EasySplashScreen> {
                               ),
                             )
                           : Container(),
-                      Padding(
-                        padding: const EdgeInsets.only(top: 20.0),
-                      ),
+                      if (widget.loadingText.data!.isNotEmpty)
+                        Padding(
+                          padding: const EdgeInsets.only(top: 20.0),
+                        ),
                       Padding(
                         padding: widget.loadingTextPadding,
                         child: widget.loadingText,
