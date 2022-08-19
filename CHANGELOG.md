@@ -1,3 +1,7 @@
+## [1.0.4] - 2022-08-19
+
+* minor logical updates
+
 ## [1.0.3] - 2021-6-30
 
 * improved performance

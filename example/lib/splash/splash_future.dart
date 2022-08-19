@@ -13,7 +13,8 @@ class SplashFuturePage extends StatefulWidget {
 class _SplashFuturePageState extends State<SplashFuturePage> {
   Future<Widget> futureCall() async {
     // do async operation ( api call, auto login)
-    return Future.value(new HomePage());
+    await Future.delayed(Duration(seconds: 3));
+    return HomePage();
   }
 
   @override

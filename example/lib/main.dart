@@ -1,7 +1,6 @@
-import 'splash/splash_future.dart';
+import 'package:example/home.dart';
+import 'package:example/splash/splash.dart';
 import 'package:flutter/material.dart';
-
-import 'splash/splash.dart';
 
 void main() {
   runApp(MyApp());
@@ -16,8 +15,13 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      // home: SplashFuturePage(),
-      home: SplashPage(),
+      // home: SplashPage(),
+      initialRoute: '/',
+      routes: {
+        '/': (context) => SplashPage(),
+        // '/': (context) => SplashFuturePage(),
+        '/home': (context) => HomePage(),
+      },
     );
   }
 }

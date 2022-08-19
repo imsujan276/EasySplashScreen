@@ -1,5 +1,4 @@
 import 'package:easy_splash_screen/easy_splash_screen.dart';
-import '../home.dart';
 import 'package:flutter/material.dart';
 
 class SplashPage extends StatefulWidget {
@@ -15,18 +14,18 @@ class _SplashPageState extends State<SplashPage> {
     return EasySplashScreen(
       logo: Image.network(
           'https://cdn4.iconfinder.com/data/icons/logos-brands-5/24/flutter-512.png'),
-      // title: Text(
-      //   "Title",
-      //   style: TextStyle(
-      //     fontSize: 18,
-      //     fontWeight: FontWeight.bold,
-      //   ),
-      // ),
-      backgroundColor: Colors.grey.shade400,
+      title: Text(
+        "Title",
+        style: TextStyle(
+          fontSize: 18,
+          fontWeight: FontWeight.bold,
+        ),
+      ),
+      backgroundColor: Colors.white,
       showLoader: true,
       loadingText: Text("Loading..."),
-      navigator: HomePage(),
-      durationInSeconds: 5,
+      // navigator: "/home",
+      durationInSeconds: 3,
     );
   }
 }

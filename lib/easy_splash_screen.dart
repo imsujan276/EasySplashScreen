@@ -15,8 +15,8 @@ class EasySplashScreen extends StatefulWidget {
   ///  Background image for the entire screen
   final ImageProvider? backgroundImage;
 
-  /// Main image size
-  final double logoSize;
+  /// logo width as in radius
+  final double logoWidth;
 
   /// Main image mainly used for logos and like that
   final Image logo;
@@ -41,7 +41,7 @@ class EasySplashScreen extends StatefulWidget {
 
   /// The page where you want to navigate if you have chosen time based navigation
   /// String or Widget
-  final Widget? navigator;
+  final dynamic navigator;
 
   /// expects a function that returns a future, when this future is returned it will navigate
   /// Future<String> or Future<Widget>
@@ -54,7 +54,7 @@ class EasySplashScreen extends StatefulWidget {
     this.navigator,
     this.durationInSeconds = 3,
     required this.logo,
-    this.logoSize = 50,
+    this.logoWidth = 50,
     this.title,
     this.backgroundColor = Colors.white,
     this.loadingText = const Text(''),
@@ -85,8 +85,6 @@ class _EasySplashScreenState extends State<EasySplashScreen> {
       });
     } else {
       widget.futureNavigator!.then((_route) {
-        print(_route);
-        print(_route is Widget);
         if (_route is String) {
           Navigator.of(context).pushReplacementNamed(_route);
         } else if (_route is Widget) {
@@ -128,7 +126,7 @@ class _EasySplashScreenState extends State<EasySplashScreen> {
                         CircleAvatar(
                           backgroundColor: Colors.transparent,
                           child: widget.logo,
-                          radius: widget.logoSize,
+                          radius: widget.logoWidth,
                         ),
                         Padding(
                           padding: const EdgeInsets.only(top: 25.0),
