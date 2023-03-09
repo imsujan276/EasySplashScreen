@@ -18,6 +18,9 @@ class EasySplashScreen extends StatefulWidget {
   /// logo width as in radius
   final double logoWidth;
 
+  // padding between title and logo
+  final double titlePadding;
+
   /// Main image mainly used for logos and like that
   final Widget logo;
 
@@ -55,6 +58,7 @@ class EasySplashScreen extends StatefulWidget {
     this.durationInSeconds = 3,
     required this.logo,
     this.logoWidth = 50,
+    tjis.titlePadding = 25,
     this.title,
     this.backgroundColor = Colors.white,
     this.loadingText = const Text(''),
@@ -125,7 +129,7 @@ class _EasySplashScreenState extends State<EasySplashScreen> {
                       children: [
                         widget.logo,
                         Padding(
-                          padding: const EdgeInsets.only(top: 25.0),
+                          padding: const EdgeInsets.only(top: widget.titlePadding),
                         ),
                         if (widget.title != null) widget.title!
                       ],
