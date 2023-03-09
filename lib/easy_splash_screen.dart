@@ -19,7 +19,7 @@ class EasySplashScreen extends StatefulWidget {
   final double logoWidth;
 
   /// Main image mainly used for logos and like that
-  final Image logo;
+  final Widget logo;
 
   /// Loader color
   final Color loaderColor;
@@ -123,11 +123,7 @@ class _EasySplashScreenState extends State<EasySplashScreen> {
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        CircleAvatar(
-                          backgroundColor: Colors.transparent,
-                          child: widget.logo,
-                          radius: widget.logoWidth,
-                        ),
+                        widget.logo,
                         Padding(
                           padding: const EdgeInsets.only(top: 25.0),
                         ),
